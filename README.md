@@ -27,6 +27,10 @@ A collection of read-to-use components from [Ant Design V4](https://ant.design/d
 5. Layout
     * Sider Menu
     * Grid
+6. Type
+    * Paragraph
+    * Text (single-line)
+    * Title
 
 
 ## Getting Started

@@ -9,11 +9,14 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "834cf405-347e-409e-a609-4f27a63ab0b1"
+		"id": "834cf405-347e-409e-a609-4f27a63ab0b1",
+		"displayName": "Ant Design Components V4"
 	},
 	"author": "Suleiman Ali Shakir",
 	"dependencies": {
 		"@ant-design/compatible": "^1.0.1",
 		"antd": "^4.0.3"
-	}
+	},
+	"name": "@framer/suleiman.ant-design-components-v4",
+	"version": "1.0.0"
 }
