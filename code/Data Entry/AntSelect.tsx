@@ -16,6 +16,7 @@ AntSelect.defaultProps = {
 }
 
 export function AntSelect(props) {
+    const {...rest} = props
     const [value, setValue] = React.useState(undefined)
 
     const onChange = value => {
@@ -31,9 +32,9 @@ export function AntSelect(props) {
 
     return (
         <Select
+            {...rest}
             style={{ width: "100%" }}
             value={props.value.length > 0 ? value : undefined}
-            placeholder={props.placeholder}
             onChange={onChange}
             children={props.items.map(item => {
                 return <Option key={item}>{item}</Option>
