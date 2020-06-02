@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Frame, addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType } from "framer"
 import { Icon } from "@ant-design/compatible"
 import { Button } from "antd"
 

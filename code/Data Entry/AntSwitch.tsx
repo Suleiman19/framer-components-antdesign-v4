@@ -7,7 +7,7 @@ addPropertyControls(AntSwitch, {
   disabled: { type: ControlType.Boolean }
 });
 
-    AntSwitch.defaultProps = {
+AntSwitch.defaultProps = {
     height: 24,
     width: 44,
     defaultChecked: false,

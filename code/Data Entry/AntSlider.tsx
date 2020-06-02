@@ -1,6 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
-import { Slider } from "antd"
+import { Slider} from "antd"
 
 AntSlider.defaultProps = {
     width: 200,

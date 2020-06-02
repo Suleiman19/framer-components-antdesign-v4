@@ -2,6 +2,11 @@
 
 A collection of read-to-use components from [Ant Design V4](https://ant.design/docs/spec/introduce) that are interactive and customizable based on spec.
 
+## Changelog v1.3.0
+* Added a flexible 12/24 column Grid component under Layout
+
+
+
 **Components List**
 1. Data Display
     * Avatar

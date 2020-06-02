@@ -32,10 +32,7 @@ export function AntRadio(props) {
     }, [props.checked])
 
     return (
-        <Radio
-            checked={checked}
-            disabled={props.disabled}
-            onChange={check}>
+        <Radio checked={checked} disabled={props.disabled} onChange={check}>
             {props.label}
         </Radio>
     )

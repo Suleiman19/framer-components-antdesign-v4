@@ -1,70 +1,55 @@
 import * as React from "react"
 import { Stack, Frame, addPropertyControls, ControlType } from "framer"
-import { Row, Col } from "antd"
-import "antd/dist/antd.css"
-
-// Open Preview: Command + P
-// Learn more: https://ant.design/components/grid/
-
-// const GRIDTYPE = {
-//     default: "Default", // 100%
-//     oneFourth: "One Fourth", // 4 parts, 25% each
-//     oneThird: "One Third", // 3 parts, 33.33% each
-//     half: "Half", // 2 parts, 50% each
-//     threeFourth: "Three Fourth", // 2 parts, 66.66% and 33.33% respectively
-// }
-
-const inheritHeight = { height: "inherit" }
 
 export function Grid(props) {
     const { text, tint, ...rest } = props
 
     return (
-        <div style={{ width: props.width, height: props.height }}>
-            <Row
-                gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-                style={inheritHeight}
-            >
-                {displayGrid()}
-            </Row>
-        </div>
+        <Stack
+            {...rest}
+            direction="horizontal"
+            distribution="center"
+            gap={props.gutter}
+            background="transparent"
+        >
+            {displayGrid(props.columns)}
+        </Stack>
     )
 }
 
-function displayGrid() {
+function displayGrid(columns) {
     const style = {
-        background: "rgba(0, 146, 255,0.2)",
-        color: "rgba(0,0,0,0.4)",
-        height: "100%",
+        background: "rgba(249, 18, 143,0.08)",
     }
-
     const cols = []
-    for (var col = 0; col < 24; col++) {
+    for (var col = 0; col < columns; col++) {
         cols.push(
-            <Col className="gutter-row" span={1}>
-                <div style={style}>col {col + 1}</div>
-            </Col>
+            <Frame height="100%" width="1fr" key={col} style={style}>
+                {col + 1}
+            </Frame>
         )
     }
     return cols
 }
 
 Grid.defaultProps = {
-    height: 900,
-    width: 1440,
+    height: "100%",
+    width: 1200,
 }
 
 // Learn more: https://framer.com/api/property-controls/
 addPropertyControls(Grid, {
-    // grid: {
-    //     type: ControlType.Enum,
-    //     defaultValue: GRIDTYPE.default,
-    //     options: [
-    //         GRIDTYPE.default,
-    //         GRIDTYPE.oneFourth,
-    //         GRIDTYPE.oneThird,
-    //         GRIDTYPE.half,
-    //         GRIDTYPE.threeFourth,
-    //     ],
-    // },
+    columns: {
+        type: ControlType.Enum,
+        defaultValue: 24,
+        options: [12, 24],
+        displaySegmentedControl: true,
+    },
+    gutter: {
+        type: ControlType.Enum,
+        defaultValue: 16,
+        options: [8, 16, 24, 32],
+        optionTitles: ["xs", "sm", "md", "lg"],
+        displaySegmentedControl: true,
+    },
 })

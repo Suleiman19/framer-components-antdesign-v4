@@ -1,5 +1,5 @@
 import { addPropertyControls, ControlType } from "framer"
-import { Tooltip } from 'antd';
+import { Tooltip} from 'antd';
 import * as React from "react";
 
 

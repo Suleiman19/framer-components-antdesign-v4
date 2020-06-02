@@ -1,8 +1,8 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
-import { Input } from "antd"
+import { Input as AntInput } from "antd"
 
-addPropertyControls(AntInput, {
+addPropertyControls(Input, {
     placeholder: { type: ControlType.String },
     defaultValue: { type: ControlType.String },
     value: { type: ControlType.String },
@@ -21,7 +21,7 @@ const normalStyle: React.CSSProperties = {
     borderColor: "#rgba(0,0,0,0.15)"
 }
 
-AntInput.defaultProps = {
+Input.defaultProps = {
     height: 32,
     width: "auto",
     defaultValue: "",
@@ -35,7 +35,7 @@ AntInput.defaultProps = {
 }
 
 
-export function AntInput(props) {
+export function Input(props) {
     const { ...rest } = props
 
     const [value,setValue] = React.useState(null)
@@ -57,7 +57,7 @@ export function AntInput(props) {
     // controls.start(data.showNotif ? "visible" : "hidden")
 
     return (
-        <Input
+        <AntInput
             defaultValue={props.defaultValue}
             value={value}
             onChange={change}
