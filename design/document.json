@@ -1402,14 +1402,13 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/Data Display\/Avatar.tsx_Avatar",
+            "codeComponentIdentifier" : ".\/Data Display\/AntAvatar.tsx_AntAvatar",
             "codeComponentProps" : {
               "badgeCount" : 100,
               "number" : 32,
               "shape" : "circle",
               "showBadge" : true,
-              "size" : "large",
-              "src" : "design\/assets\/suleiman-art-avatar-square.png"
+              "size" : "default"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -1427,7 +1426,7 @@
             "fillType" : "color",
             "height" : 40,
             "heightType" : 0,
-            "id" : "gSuK9fqb8",
+            "id" : "xkOXUV8xo",
             "intrinsicHeight" : 32,
             "intrinsicWidth" : 32,
             "left" : 428,
@@ -1526,7 +1525,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/Data Display\/Statistic.tsx_Statistic",
+            "codeComponentIdentifier" : ".\/Data Display\/AntStatistic.tsx_AntStatistic",
             "codeComponentProps" : {
               "title" : "Statistic Title",
               "value" : "Description",
@@ -1548,7 +1547,7 @@
             "fillType" : "color",
             "height" : 64,
             "heightType" : 0,
-            "id" : "kSciQTNHD",
+            "id" : "yooOmjZOv",
             "intrinsicHeight" : 64,
             "intrinsicWidth" : null,
             "left" : 231,
